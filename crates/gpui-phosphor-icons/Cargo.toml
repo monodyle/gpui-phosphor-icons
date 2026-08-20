@@ -1,0 +1,37 @@
+[package]
+name = "gpui-phosphor-icons"
+version = "0.1.0"
+description = "Phosphor icons for gpui"
+keywords = ["gpui", "icons", "phosphor", "ui"]
+categories = ["gui"]
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+gpui.workspace = true
+
+[features]
+default = ["thin", "light", "regular", "bold", "fill", "duotone"]
+# One feature per icon weight. Turn off the weights you do not use to make the
+# binary smaller.
+thin = []
+light = []
+regular = []
+bold = []
+fill = []
+duotone = []
+# Build the table of every icon, for lookup by name at run time. This keeps all
+# icon data in the binary, so only turn it on when you need it.
+catalog = []
+
+[target.'cfg(target_os = "linux")'.dev-dependencies]
+gpui = { workspace = true, features = ["x11", "wayland"] }
+
+[[example]]
+name = "gallery"
+required-features = ["catalog"]
+
+[package.metadata.docs.rs]
+all-features = true
