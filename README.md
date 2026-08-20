@@ -110,6 +110,7 @@ The `catalog` feature keeps every icon in the binary, because the table names th
 
 ```text
 cargo run --example hello
+cargo run --example video_player
 cargo run --example gallery --features catalog
 ```
 
