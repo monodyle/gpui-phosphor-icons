@@ -54,9 +54,7 @@ impl Render for Gallery {
                     .py_1()
                     .rounded_md()
                     .cursor_pointer()
-                    .when(option == weight, |this| {
-                        this.bg(rgb(BAR_ACTIVE_BACKGROUND))
-                    })
+                    .when(option == weight, |this| this.bg(rgb(BAR_ACTIVE_BACKGROUND)))
                     .child(option.as_str())
                     .on_click(cx.listener(move |this, _, _, cx| {
                         this.weight = option;
