@@ -125,5 +125,5 @@ cargo xtask generate   # copy the SVG files and write src/icons.rs and src/catal
 
 ## License
 
-The Rust code is MIT.
-The icons are MIT, copyright (c) 2023 [Phosphor Icons](https://github.com/phosphor-icons/core).
+- MIT - Copyright (c) 2025 Monody Le
+- MIT - Copyright (c) 2023 [Phosphor Icons](https://github.com/phosphor-icons/core)

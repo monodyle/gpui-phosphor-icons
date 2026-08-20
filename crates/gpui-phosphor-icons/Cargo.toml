@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Phosphor icons for gpui"
 keywords = ["gpui", "icons", "phosphor", "ui"]
 categories = ["gui"]
+authors.workspace = true
 edition.workspace = true
 license.workspace = true
 repository.workspace = true
